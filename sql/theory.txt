@@ -1,0 +1,169 @@
+SQL datatypes:
+char, varchar, blob(for longer string), int, bit, float, double, boolean, date(yyyy-mm-dd), year
+
+Types of SQL commands:
+DDL(Data Defination Language): create, alter, rename, truncate, drop
+DQL(Data Query language):select
+DML(Data Manipulation Language):insert, update, delete
+DCL(Data Control Language):grant & revoke permission form users
+TCL(Transaction Control Language):start transactio, commit, rollback
+
+Keys:
+1. Primary Key: always not null and unique
+A table has only one primary key.
+every row te unique value pabo primary key r column e.
+
+2. Foreign Key: It refers to the primary key of another table, 
+the table containing foreign key gets connected with another table by that table's primary key.
+There can be multiple forwign keys in a table.
+Foreign keys have duplicate and null values.
+
+SQL constraints:
+PRIMARY KEY, NOT NULL, unique, foreign key, default, CHECK
+
+Using DISTINCT keyword we can get the unique values present in a column.
+
+
+Aggregate functions:
+COUNT(), MAX(), AVG(), MIN(), SUM()
+SELECT MAX(marks) FROM student;
+SELECT COUNT(rollno) FROM student;//it will return the number of student the student table has
+
+
+GROUP BY clause:
+it collect data from multiple records and group the result by one or more column.
+suppose i want to know no of students present i each city then
+SELECT city, COUNT(name) 
+FROM student 
+GROUP BY city;
+
+
+HAVING clause::
+It's similar to where i.e. it applies some condition on rowa.
+Used when we want to apply any condition after using GROUP BY.
+
+To count the number of students in each city where max marks cross 90.
+SELECT city, COUNT(rollno) FROM student
+GROUP BY city
+HAVING MAX(marks)>90;
+
+
+ORDER to write code:::
+SELECT column(s)
+FROM table_name
+WHERE condition
+GROUP BY column(s)
+HAVING condition
+ORDER BY column(s) ASC/DESC;
+
+WHERE is used to give condition in rows
+HAVING is used to give condition in GROUP BY
+
+UPDATE::
+UPDATE table_name 
+SET col1=val1, col2=val2
+WHERE condition;
+
+UPDATE student
+SET grade="O"
+WHERE grade="A";
+
+CASCADE use kore amra relation e thaka 2 to table r modhye ekta te change korle onno ta te automatically change hye jay
+CREATE TABLE student(
+    id INT PRIMARY KEY,
+    course_id INT,
+    FOREIGN KEY(course_id) REFERENCES course(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
+
+To change the schema we use alter function:
+
+ALTER TABLE table_name
+ADD COLUMN column_name datatype constraint;
+
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+
+ALTER TABLE table_name
+RENAME TO new_table_name;
+
+
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name new_datatype new_constraint;
+
+
+ALTER TABLE table_name
+MODIFY col_name new_datatype new_constraint;
+
+LIKE:::
+to return all the records where the value of the city column starts with the letter "a"
+SELECT * FROM Customers
+WHERE City LIKE 'a%';
+
+//ends with "a"
+SELECT * FROM Customers
+WHERE City LIKE '%a';
+
+//contains letter "a"
+SELECT * FROM Customers
+WHERE City LIKE '%a%';
+
+//starts with "a" and ends with "b"
+SELECT * FROM Customers
+WHERE City LIKE 'a%b';
+
+//not starts with "a"
+SELECT * FROM Customers
+WHERE NOT City LIKE 'a%';
+
+//second letter of the city is an "a"
+SELECT * FROM Customers
+WHERE City LIKE '_a%';
+
+//first letter of the city is "a" or "c" or "s"
+SELECT * FROM Customers
+WHERE City LIKE '[acs]%';
+
+//starts with "a" to "f"
+SELECT * FROM Customers
+WHERE City LIKE '[a-f]%';
+
+//does not starts with "a" or "c" or "f"
+SELECT * FROM Customers
+WHERE City LIKE '[!acf]%;
+
+//select all the records where Country is either "Norway" or "France"
+SELECT * FROM Customers
+WHERE Country IN ('Norway','France');
+
+//select all rcords where the value of the price column is between 10 and 20
+SELECT * FROM Customers
+WHERE Price BETWEEN 10 AND 20
+
+//join the two tables Orders and Customers, using the CustomerID field in both tables as the relationship between the two tables.
+SELECT *
+FROM Orders
+LEFT JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
+
+//select all records from the two tables where there is a match in both tables.
+SELECT *
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID;
+
+//list the number of customers in each Country
+SELECT COUNT(CustomerID),
+Country
+FROM Customers
+GROUP BY Country;
+
+//List the number of customers in each country, ordered by the country with the most customers first.
+SELECT COUNT(CustomerID),
+Country
+FROM Customers
+GROUP BY Country
+ORDER BY COUNT(CustomerID) DESC;

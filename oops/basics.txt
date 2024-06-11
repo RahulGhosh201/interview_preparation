@@ -1,0 +1,73 @@
+OOPS- Object Oriented Programming System
+Ajkal amra je modern language gulo use kore thaki tara OOPS r concept maintain kore build hyeche tai oops r concept clear thaka valo.
+kono car er j blue print banano hoy seta k amra class bolte pari and sei blue print follow kore j car ta banano hoy take amra object bolte pari.
+
+Objects are the instances of a class.
+objects are built with-
+1. charactarestics: data, attributes or properties
+2. Behaviors: functions, methods, procedures
+
+need of oops:
+1. Without knowing the actual implementation, it helps to understand the software easily.
+2. the readability, maintainability, understandability of the code increases.
+3. using oops we can write and manage big softwares easily.
+
+4 pillers of OOPS:
+Inheritence, Encapsulation, Polymorphism, Data Abstraction
+
+Encapsulation holo encapsulating the data members and the methods
+eta kora hoy kichu object's components er access restrtict korar jnno, which can prevent the accidental modification of data.
+private use kore j data, attributes, methods() define kora hoy jate jekhan theke khusi chaile ei properties gulo k access kora na jay.
+
+
+
+Polymorphism are of two types.
+1.Compile time Polymorphism or static or early binding or method overloading or function overloading:same function name but either the return type is different or the number of arguments are different
+2. Runtime Polymorphism or dynamic or late binding or method overriding:subclass create korar por as subclass inherits all the methods of parent class tokhn function take override kora jay.
+
+Inheritance:
+It allows a new class inheriting properties and behaviors from an existing class. The class that is inherited from is called the superclass or parent class and the class that inherits is called the subclass or child class. 
+subclass uses extennds keyword to inherit properties from superclass
+Runtime Polymorphism ekhane dekane jay mane method overriding
+Kono method k jodi super class e define kora na thake seta  sub class e define kora hoy.
+using super() keyword we can access parent class properties from inside the sub class.
+mane amra jokhon object create korbo in the main function amra Animal() create na kore direct Dog() create korte pari and Dog() er modhye super() call kora thaklei hobe.
+
+single inheritance:only one sub-class and super-class are present and sub-class inherits from super-class.
+multiple-inheritance:sub-class inherits from multiple super classes
+multi-level-inheritance: parent inherits from grand parent and then child inherits from parent
+hirerchial inheritance:multiple child classes inherits from one parent class.
+hybrid inheritance: combination of all.
+
+
+Data Abstraction:: 
+Amake abstract classes and interfaces nie bolte hobe.
+Method of hiding unnecessary details from the users. Like for example for a user he only need to how to drive the car, not which wire should be connected to which part.
+There are abstract classes and interface based on the topic of Data abstraction. 
+Inside an abstract class abstract methods are declared but not defined, only in the subclasses those abstract methods are defined.
+An abstract class includes both abstract method and concrete method.
+Also there is interface, it consists of abstract, default, static method and the subclasses here implements does not extend.
+
+Any class does not consume any memory, as it's just a bule-print. Now following that blue-print whenever an instance of a class meaning a object is made and as this object initializes the data attributes, methods, etc it consumes memory.
+
+jodi kono classer members ra static hoy then amra kono object create na koreo sei classer static members der use korte parbe directly from the main function.
+
+
+What is Constructor?
+    special method who contains the same name as the class name. It serves the special purpose of initializing the objects. Most of the time even if we don't write a constructor code , the compiler provides a default constructor.
+    MyClass *MyObjPtr=new MyClass();
+    it will create a object based on the class MyClass with the help of the constructor.
+default constructor, parameterized constructor, copy constructor.
+
+access specifiers or modifiers:
+public, protected, default, private
+public can be accessed from anywhere.
+protected same as public only difference is that in the other packages protected can be accessed only from subclasses.
+private can only be accessed within the class.
+
+default does not exist in case of cpp.
+Multiple Inheritance: C++ supports multiple inheritance; Java uses interfaces.
+Memory Management: C++ requires manual memory management; Java has automatic garbage collection.
+Exception Handling: Optional in C++; mandatory for checked exceptions in Java.
+Polymorphism: C++ uses virtual functions for dynamic polymorphism; Java's methods are virtual by default.
+Access Modifiers: Both languages have public, protected, and private, but Java also has package-default.

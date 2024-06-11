@@ -1,0 +1,100 @@
+to create a table->
+CREATE DATABASE db_name;
+//db_name holo table name
+
+DROP DATABASE db_name;
+//delete the created table
+//eta case sensitive naoy
+
+USE db_name;
+//to use the created table
+
+CREATE TABLE table_name(
+    column_name1 datatype constraint,
+    column_name2 datatype constraint,
+    column_name3 datatype contraint
+);
+
+CREATE TABLE student(
+    id INT PRIMARY KEY,//primary key is always unique in each row
+    name VARCHAR(50),//lenght of name can't exceed 50
+    age INT NOT NULL//age can't be empty
+);
+//to create a table named student
+
+INSERT INTO student(1,"Rahul", 24);
+INSERT INTO student(2,"Rohit", 19);
+//inserting data in the cretaed table
+
+SELECT * from student;
+//show the full table
+//* means all
+
+CREATE DATABASE IF NOT EXISTS db_name;
+DROP DATABASE IF EXIST db_name;
+SHOW DATABASES;
+SHOW TABLES;
+
+CREATE TABLE temp(
+    cust_id INT,
+    FOREIGN KEY (cust_id) references customer(id)//mane  eta temp table e cust_id holo foreign key ja customer table e thaka primary key id r sathe relation create korche
+);
+
+salary INT DEFAULT 25000;
+//puro salary column ta te default value 25000
+CREATE TABLE employee(
+    cust_id INT PRIMARY KEY,
+    salary INT DEFAULT 25000
+);
+INSERT INTO employee(cust_id) VALUES 
+
+
+
+//CHECK constraint
+CREATE TABLE city(
+    id INT PRIMARY KEY,
+    city_name VARCHAR(50),
+    age INT,
+    CONSTRAINT age_check CHECK(age>=18 AND city_name="Delhi")
+);//eta amra jokhn data insert korbo tokhon kaje debe mane computer check korbe j inserted data te age >=18 and city delhi kina
+ekhane age_check holo constraint name 
+CHECK(condition is placed here)
+
+CREATE TABLE newTab(
+    age INT CHECK(age>=18)
+);
+
+
+SELECT:
+used to select any column from the table and show it as output.
+SELECT col1, col2 FROM table_name;
+SELECT * FROM table_name;//to show all the details of a table
+
+
+WHERE clause:
+it gives a condition and works with SELECT
+SELECT name FROM student where marks>=80
+
+//as default in MySQL, safe mode is on so that we can't update any records randomly
+//to turn off this safe mode, we have to write
+SET SQL_SAFE_UPDATES=0;
+
+//now if we want too turn on the safe mode again we have to write
+SET SQL_SAFE_UPDATES=1;
+
+
+UPDATE student
+SET grade="O"
+WHERE grade="A";
+
+
+UPDATE student
+SET grade="B"
+WHERE marks BETWEEN 80 AND 90;
+
+UPDATE student 
+SET marks=marks+1;//if we want to update every students' marks.
+
+DELETE FROM student
+WHERE marks<33;//33 r niche jar marks ache tar record delete kore debe
+

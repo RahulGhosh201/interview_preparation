@@ -1,0 +1,22 @@
+In student table,
+1. change the name of the column "name" to "full_name"
+2. delete all the students who scored marks less than 80
+3. delete the column for grades
+
+1.
+UPDATE TABLE student
+CHANGE name full_name VARCHAR(50);
+//here we are using:
+UPDATE TABLE table_name
+CHANGE old col_name new col_name datatype constraints;
+
+
+2.
+DELETE FROM student
+WHERE marks<80;
+
+
+3.
+ALTER TABLE student
+DROP COLUMN grades;
+

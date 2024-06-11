@@ -1,0 +1,6 @@
+1.chakra ui, firebase authentication kothay kno use korecho?
+2. login/registration for ta ki die create korecho?
+3. profile section e whatsapp feature ta kivabe add korecho?
+4. redux tool kit, react router egulo ei project e kothay kaje legeche
+5. dark/light mode ta kon stack use kore implement korecho?
+vai toke tor oi internshuip r interview r okhane j gulo ask korechilo ei project related segulo add kore de

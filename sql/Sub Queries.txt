@@ -1,0 +1,64 @@
+A Sub query or Inner query or a nested query is a query within another SQL query.
+
+Problem-1:: 
+Get names of the student who scored more than class average.
+step1: Find the avg of class
+step2: Find the names of the student with marks>avg
+
+//to find the avg of class
+SELECT AVG(marks)
+FROM student;
+
+
+Soln::
+SELECT name 
+FROM student 
+WHERE marks>(
+    SELECT AVG(marks)
+    FROM student
+);
+
+
+Problem-2::
+Find the names of all students with even roll numbers
+step-1:Find the even roll numbers
+ste-2:find the names of students with these roll numbers
+
+//to find the even roll numbers
+SELECT rollno
+FROM student
+WHERE rollno%2=0;
+
+Soln::
+SELECT name
+FROM student
+where rollno IN(
+    SELECT rollno
+    FROM student
+    WHERE rollno%2=0
+);
+
+
+Problem-3::
+Find the max marks from the student of Delhi
+step-1:Find the students of Delhi
+step-2:Find their max marks using the sublist in step-1
+
+//step-1
+SELECT *
+FROM student
+WHERE city="delhi";
+
+Soln::
+Select MAX(marks)
+FROM (
+    SELECT *
+    FROM student
+    WHERE city="delhi") AS temp;
+
+or
+
+SELECT MAX(marks)
+FROM student
+where city="delhi";
+

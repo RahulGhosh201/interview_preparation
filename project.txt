@@ -1,0 +1,90 @@
+tell me about your projects
+
+I took a liking to work on some frontend web development projects. Same as everyone my first project was 
+a calculator built with the help of html, css, js
+there after with help of various sites mailnly youtube i have built various projects like
+building the stone paper scissor game, a password strength detector , a chrome extension when you click on it it will always provide a different joke,
+a website where you can get random pictures of dog which was built using apis and many more. These are the
+small projects.
+
+1)The main project was building the frontend part of the netflix website it has the features to show the trending new shows along with their trailer.
+	The designing is done by CSS & all the advanced stuff like watching trailers
+	and updation according to real app is done by JS and mainly APIs.
+	You see at the top of the screen I designed a radio button,
+	Below you will will be able to see three lists of recommended series or movies, netflix originals, trending and top rated. all this lists are updated according to the original netflix website.
+	Also if you one of the movies or series catches your attention and you want to watch trailers o that specific movie you just have to click ono the thumbnail of that movie and it will take you to youtube.
+
+	API- allows two applications to talk to each other
+ Application Programming Interface
+<--  -->html comments
+we include javascript files using <script src=scrip.js></script> OR just directly including all the code inside the html file but we don't do that as it's not a good practice.
+mobieDb name e ekta api use korechi 
+also j list ta show korbe seta dekhte valo korar jnno thumbnail gulo 2 typer kora chae either backdrop(horizental), poster(rectangular).
+so ei js file tate mainly getOriginals(), getTrendingNow(),getTopRated() er oporei kaj ora hoyeche.
+Dom Manipulation, tree like relationship.	
+mainly the background e ekta image use kora hyeche and seta k ztransform use kore background e rakha hyeche now list e j gulo show korbe segulo oi backgri=ound image er oporei show korte parbe.
+tarpor html r help titles gulo add kora various section e vag kore deoa hyeche then css er help e j list ta asbe sei list ta sliding manner e asbe sei list er ek ekta thumbnail ki type r hbe backdrop or postal mane horizental or vertical seta thik hbe.
+then js er modhye api die fetch kora hche movies details, details e amra pachi thumbnail, url, dom_elemnet(mane 3 te list r modhye kon list e jabe eta), 
+ja response pabo segulo k niei dom manipulation r madhyome puro project ta darie ache.
+
+
+
+2)Another big project was building a 3D interfaced website, which was built with the help of GSAP(Green sock animation platform), Scroll
+	Trigger, Locomotive Scroll, <canvas>.
+	GSAP is a js library which includes the scroll trigger , locomotive scroll etc. those helps to perform a smooth, high level animation.
+	ScrollTrigger is a really small (~2kb minified) JavaScript library which lets you apply scroll-triggered animations to any element
+	Locomotive Scroll is a React scroll library that builds on ayamflow's virtual-scroll, a library used to create custom scrollers that support touch and keyboard. Locomotive Scroll provides support for various forms of scrolling animations, including smooth scrolling, animated page overlays, and parallax effect
+	locomotive include korar jnno locomotive css & locomotive js lagate hbe
+	<canvas> is an HTML element which can be used to draw graphics via scripting (usually JavaScript). This can, for instance, be used to draw graphs, combine photos, or create simple animations.
+	As of features in this website,
+	While scrolling down or above in the website we can see the figure changes automatically. Actually there is no animation here, I have used a total of above 350 images, so whenever you scroll down or above the image  changes and images have very small changes to each other so the changing of image actually creates the idea that it's an animation added to the website. 
+	Also you will be able to see some parts of the screen remain static and some of the background contents also gets changed during the scrolling up-down. 
+	screen r various part e lekha gulo div ar css use kore lekha.
+	render() use kora hyeche jate basically each time a new image is shown in the screen, the scree does not a reload.
+
+
+3)KhetoKiBaatKaro-> we as a team of 5 members were lucky enough to attend a 36 hour offline hackathon named StatusCode0 which was organized by MLH at IIIT kalyani. I was incharge of frontend part of the project with one of my team member also logo designing, documentation, readme file generation, presentation preparation along with creating a video and creating various small images included in the project.
+	The project is a combination of stack over flow and social media platform for farming community. You see farming community in our country is outdated, honestly speaking they don't trust the solutions from internet. 
+	if we are talking aout features in the project:
+ 	1. login/regestration along with password forgot feature which we built using components in chakra ui and react component, also a special feature is added in the project by clicking on a switch you can change the theme of the project.
+	2. you will have your own profile section where you will be able to see details about yourself and you can edit these details.
+	3. you can perform CRUD operation(Create, Read, Update, Delete), ei part ta banano jyeche redux toolkit use kore.
+	What I did?
+	1. building the regestration and login form
+	2. creating the application logo, logo in the login page
+
+	What techs are used for which part?
+	1. Chakra UI use kora hyeche dark/light, react component r sathe sob buttons, forms gulo banate.
+	2. ImageBox use korechi various jayga te image upload korar jnno.
+	3. ReadME file ta baniechi ami.
+	4. project r vrious part e documentation korechi.
+	5. redux toolkit use korechi user r post create korte, user profile e tarpor every page e authenticate ache kina seta check korte legeche
+	problem hyechilo authentication e , tar solution holo debug, css r bodole taliwind+ chakra ui form tao chakra ui, ek page theke onno page e transfer korar jnno react router use korechi.
+	backend e firebase, firestore e j database ache seta diei connect kora hyeche frontend k backend r sathe.
+	Firestore holo ekta NoSql database mane apni j details die register korchen sei details gie store hyeche amader ei Firestore die implement kora NoSQL database e then apni jokhn login korte jachen details gulo nie firebase authenticate korbe aonar account ta.
+ 	We can say that firebase holo ekta cloud hosted NoSQL database.
+	Redux holo ekta javascript library, amra mainly redux use kori karon amra data update korte parbo application e thaka multiple components er modhye even though they are independent of each other, amra ekhane redux toolkit use korechi CRUD operation perform korar pore sei components gulor properly changes anar jnno.
+ 	and multiple pages e jokhn jache, and redux toolkit use kora hoy react r modhyei redux r logic lekhar jnno. 
+
+
+React holo maily a single page application mane amra ektai structure build korbo sei structure r modhye thaka component gulo change kore different page design korbo. react r ekta page many components thake(like navigation component, header component, create post component, etc). ei sob choto choto commponent gulo k add korei create hobe parent component. ei component holo ekta js class that returns back to html.
+mane jsx(javascript xml).components two types r function and class. 
+React router mane ekta single page application r modhyei different page e routing korar jnno use kora hoy(xyz.com/profile, xyz.xom/product, xyz.com/homepage)
+amra various components r modhye data pass korte pari as a prop.
+Virtual dom(tree structure).
+
+npm create-react-app <appname>
+npm start
+npm run build
+
+
+GIT(Global Information Tracker) is a version control system. it's a DevOps tool used for source mode management mane source doe r modhye ja changes hche seta track kore. Also git makes colleboration easier.
+
+AZURE holo ekta PAAS(Platform As a Service). mane kichu applications thake jegulo k local memory te handle kora jay na because of it's size, scalability, flexibility to azure ei khetre service provide korche by proving a platform.
+public, private, hhybrid cloud.
+Cloud computing refers to the usage of computing resources (servers) on the internet for the purpose of storing, analyzing, processing the data. Instead of maintainnig our own servers, we use the service provided by third party vendors such as Microsoft, AWS.
+
+.Net is a freamework ja help kore in building applications using various programming languages like C sharp, c++, f sharp, visual basic. It contains both front end and back end languages. mainly eta amra use kori karon eta ekta rich set of api provide kore.
+NET Framework is a managed execution environment for Windows that allows software developers to create a software application in one programming language and be assured that the app will be able to work with code written in other languages.
+IaaS (infrastructure as a service), PaaS (platform as a service), and SaaS (software as a service).
+Azure fundamentals, power platform fundamentals.

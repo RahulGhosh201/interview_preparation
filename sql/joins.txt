@@ -1,0 +1,130 @@
+Join is used to combine rows from two or more tables, based on related
+column between them.
+
+Mane join perform korar jnno 2 to table e common column thakte hbe.
+
+Join are of 2 types.
+1. Inner Join: it shares the common between two tables.
+2. Outer join: are of 3 types.
+    i. Left join: collects all the part of left side table and the common part.
+    ii. Right join: collect all part of the right side table and the common part.
+    ii. Full join: As the name suggests collect all the records of two tables.
+
+Inner Join:
+Returns record thar have matching values in both tables.
+SELECT column(s)
+FROM tableA
+INNER JOIN tableB
+ON tableA.col_name=tableB.col_name;
+
+CREATE DATABASE IF NOT EXISTS college;
+USE college;
+CREATE TABLE student(
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+INSERT INTO student(id, name)
+VALUES
+(100,"rahul"),
+(101,"rohit);
+
+
+CREATE TABLE course(
+    id INT PRIMARY KEY,
+    course VARCHAR(50)
+);
+
+INSERT INTO course(id, name)
+VALUES
+(100,"english"),
+(101,"math"),
+(102,"history");
+
+SELECT *
+FROM student
+INNER JOIN course
+ON student.id=course.id;
+
+or
+
+SELECT *
+FROM student as s
+INNER JOIN course as c
+ON s.id=c.id;//s and c are aliases meaning alternate names
+
+
+Left join::::
+returns all records from the left table and the common records from the right table.
+SELECT COLUMN(s)
+FROM tableA
+LEFT JOIN tableB
+ON tableA.col_name=tableB.col_name;
+
+SELECT *
+FROM student as s
+LEFT JOIN course as c
+ON s.id=c,id;
+
+
+Right Join:::
+returns all the records from the right table and the common records from the left table.
+SELECT column(s)
+FROM tableA
+RIGHT JOIN tableB
+ON tableA.col_name=tableB.col_name;
+
+SELECT *
+FROM student as s
+RIGHT JOIN course as c
+ON s.id=c.id;
+
+ 
+FULL Join/ FULL OUTER join:::
+Returns all records when there is a match in either left or right table
+SELECT * 
+FROM student as s
+LEFT JOIN course as c
+ON s.id=c.id
+UNION
+SELECT *
+FROM student as s
+RIGHT JOIN course as c
+ON s.id=c.id;
+
+
+Left Exclusive Join::
+it returns only the unmatched portion of the left table
+SELECT *
+FROM student as s
+LEFT JOIN course as c
+ON s.id=c.id
+WHERE c.id IS NULL;
+
+Right Exclusive Join::
+SELECT *
+FROM student as s
+RIGHT JOIN course as c
+ON s.id=c.id
+WHERE s.id IS NULL;
+
+
+FULL Exclusive Join::
+returns the unmatched records from both of the table
+
+SHELF JOIN/Cross Join/Cartesian Join::
+SELECT a.name,b.name
+FROM employee as a
+JOIN employee as b
+ON a.id=b.manager_id;
+
+it returns all the records from 2 table
+SELECT *
+FROM tableA
+CROSS JOIN tableB;
+
+
+
+
+ 
+

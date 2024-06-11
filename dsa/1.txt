@@ -1,0 +1,65 @@
+linear: array, linkedlist, stack, queue
+non-linear: tree, graph, table, sets
+
+array:same datatype, contigous memory location, fixed size,0-indexed, random access.
+int[] arr=new int[10];
+
+linkedlist: collection of nodes connected to each other. first node k head bole, last nide k tail bole, no contigous memory allocation, dynamic in size.
+singly linkedlist, doubly(connected with previous and next nodes)(music playlist with next and previous navigation buttons), circular linked list(tail is connected with head)
+ete advantages holo various data types er element thakte pare and contigius memory location e stored thakena but disadvantage holo random access kora jay na 
+access korte hole tar ager nodes gulo k traverse kore pouchate hbe.
+
+Stack:(LIFO):LAST IN FAST OUT: A stack of books.
+push,pop,peek,isEmpty,size
+Stack<Integer> stack=new Stack<>();
+util library te stack included thake but amra chaile explicitly implement korte pare.
+
+Queue:(FIFO):FAST IN FAST OUT: Railway ticket booking line
+enqueue, dequeue, peek, isEmpty, size
+etao java.util packager modhye pore and seta k LinkedList or Queue r under e pore.
+Queue<Integer> queue=new LinkedList<>();
+or
+Queue<Integer> queue=new ArrayDeque<>();
+1,2,3,4,5 ei list e front pointer point kore 5 e and rear pointer point kore 1 ke. enqueue kora mane new element add kore seta add korbo 1 r age and deqqueue mane front theke element remove kora mane 5 k remove korbo.
+
+
+Tree: nodes and edges. root and child nodes. 
+Binary tree: each node has atmost 2 childrens, left children and right children.
+Binary Search Tree(BST): left node<root and right node> root.
+left subtree are less than the node and right subtree are more than the node.
+balanced tree: height difference between left subtree and right subtree is atmost one.
+AVL tree: self balancing binary search tree(bst).
+avl tree= bst + balanced tree. mane left node< root and right node> root and most height difference between left subtree and right subtree is atmost one.
+and for any reason jodi ei height difference more than 1 hye jay then it will balance itself.
+
+
+in-order traversal: recursively visit in the order of left child, current node, right child.
+pre-order traversal: recursively visit in the order of current node, left child, right child.
+post-order traversal: recursively visit in the order of left child, right child, current node.
+
+
+Graph: BFS(Breadth First Search), DFS(Depth First Search)
+Collection of nodes using edges. finding the shortest path(dijkstra's algo(edges gulor weight add korbo), bellman-ford, knapsack).
+
+
+Map<String, Integer> hashMap=new HashMap<>();
+hashMap.put("One", 1);
+hashMap.put("Two", 2);
+sysout(hashMap);
+
+Table: standard library te directly provide kore na. table mane mapping two keys to a single value(like a 2d map).
+Table<String, String, Integer> table=HashBasedTable.create();
+table.put("R1","C1",1);
+table.put("R2","C2",2);
+System.out.println("Value at (R1, C1): " + table.get("R1", "C1"));
+System.out.println("Value at (R2, C2): " + table.get("R2", "C2"));
+
+or
+Map<String,<String,Integer>> table=new HashMap<>();
+
+set: can't contain duplicate elements. part of collectio interface. 
+Set<String> hashSet=new HashSet<>();
+hashSet.add("One");
+hashSet.add("Two");
+
+Postfix expression A B + C *

@@ -1,0 +1,44 @@
+CREATE TABLE dept(
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+CREATE TABLE teacher(
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES dept(id)//eta mane bojhache j dept_id ei table r foreign key ja dept table r private key id r sathe attach ache
+);
+
+ekhane dept table ta parent table as in the relation here it contains the primary key, 
+and teacher table ta child table as dept_id ta foreign key.
+
+CREATE TABLE student(
+    id INT PRIMARY KEY,
+    course_id INT,
+    FOREIGN KEY(course_id) REFERENCES course(id)
+    ON DELETE CASECADE
+    ON UPDATE CASECADE
+);
+
+ 
+ ALTER TABLE student
+ ADD age INT NOT NULL DEFAULT 20;
+
+
+ ALTER TABLE student
+ DROP COLUMN age;
+
+
+ ALTER TABLE student
+ MODIFY name VARCHAR(10);
+
+
+ALTER TABLE student
+RENAME TO stu;
+
+
+
+ALTER TABLE student
+CHANGE age student_age INT NOT NULL;
+

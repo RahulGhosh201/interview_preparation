@@ -1,0 +1,61 @@
+1. self introduction
+2. Basic coding questions like linear search
+3. Language comfortable with
+4. Abstraction with real life of an example
+5. Explain try catch block
+6. difference between final and finally
+7. difference between linkedlist and array
+8. project(challanges faced, how you overcame the challanges, futture scope)
+9. Difference between ML and AI
+10. What is SVM
+11. naive bayes algorithm
+12. how will you approach a new technology
+13. OOPS concepts(4 pilars)
+14. access modifiers in java
+15. types of polymorphism
+16. is multiple inheritance possible in java
+17. diff bw abstract class and interface
+18. interface P{
+public void help;
+}
+class C implements P{
+public void helper(){}
+}
+P p=new C();
+is is correct
+19. difference  between singleton and prototype beans.
+20. explain @RequestMapping annotation
+21.diff bw truncate and delete command
+22.views in SQL
+23.why you want to join cognizant
+24. Hobbies
+25. Database(an orhanization collection of structured information, data typically stored in a computer system)
+26. C programming Language(fast programmong language, simple and efficient, mid-level programming language)
+27. certification
+28. ready to work in night shifts and relocate
+29. java
+30. diff btw data abstraction and data encapsulation
+31. apti questions
+32. any other offer
+33. project sharing screen, future scope
+34. dictionaries, libraries in python
+35. diff btw primary and foreign key
+36. joins
+37. ehy do you want to join cognizant
+38. happy with the job profile
+39. diff btw static and dynamic website
+40. by sharing screen swap two numbers without using a third variable
+41. tell me something about cognizant
+42. are you aware of any latest technologies
+43. why should we hire you
+44. prefferd locations to work
+45. Any questions
+
+
+
+
+
+
+
+
+

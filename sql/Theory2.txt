@@ -1,0 +1,26 @@
+DROP deletes the table, but TRUNCATE deletes the records present in the table.
+TRUNCATE TABLE table_name;
+
+UNION::
+it is used to combine the result set of two or more SELECT statements.
+Gives unique records.
+To use it:
+every SELECT should have same no of columns
+columns must have similar data types.
+columns in every SELECT should be in same order.
+
+SELECT COLUMN(s) FROM tableA
+UNION
+SELECT COLUMN(s) FROM tableB;
+//UNION returns all the unique records present in two tables where as UNION ALL returns all the records even the duplicate ones.
+
+MySQL Views:
+A view is a virtual table based on the result-set of an SQL statement.
+
+A view always shows up-to-date data.
+The database enginee recreates the view, every time a user queries it.
+
+CREATE VIEW view_name AS
+SELECT rollno, name FROM student;//mane rolllno and name column nie ekta virtual table create korbe named view_name
+
+SELECT * FROM view_name;

@@ -1,0 +1,24 @@
+DBMS(Data Base Management System): A softwrae that managaes database
+Database: Group of interrelated records in table format
+collection of data in organized format
+Dbms r main kaj holo kono records er modhye thaka data k searck kora, modify kora, delete kora, new data k delete kora.
+Mainly kono user directly data k access korte pare na tai take dbms r madhyome data k access korte hoy.
+Advantages:
+1. Control data redundancy
+2. Easy maintainance
+3. reduce time
+4. backup
+
+Databases are of two types:
+1. Relation DBMS(RDBMS): Datas are stored in table format. MySQL, SQL Server, ORACLEs are example of RDBMS  and to access from this type of DataBases we use SQL.
+2. Non-Relation DBMS: Datas are not stored in table format. ex: mongoDB.
+
+SQL(Structured Query Language):
+It's a programmming language used to interact with RDBMS(relationla DBMS).
+used to perform CRUD operations:
+Create, Read, Update, Delete
+
+Kono tabler column name k schema bole.
+
+
+

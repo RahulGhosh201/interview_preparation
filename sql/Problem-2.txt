@@ -1,0 +1,55 @@
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE student(
+    rollno INT PRIMARY KEY,
+    name VARCHAR(50),
+    marks INT NOT NULL,
+    grade VARCHAR(1),
+    city VARCHAR(20)
+);
+
+INSERT INTO student
+(rollno, name, marks, grade, city)
+VALUES
+(101,"Rahul", 85,"A", "Kolkata"),
+(102,"Rohit",91,"E","Delhi");
+
+SELECT name, marks FROM student;
+
+SELECT DISTINCT city FROM student;
+//it shows all the unique city present in the table named student.
+
+SELECT name FROM student where marks>=85;
+SELECT * FROM student WHERE city="Kolkata";
+//it shows all the student names whoose marks>=85
+SELECT col_name FROM table_name WHERE condition;
+
+SELECT * FROM student WHERE marks+10>100;
+
+SELECT * FROM student WHERE marks>80 AND city="Mumbai";
+
+SELECT * FROM student WHERE marks BETWEEN 80 AND 90;//it shows the details of the students whoose marks>=80 and <=90
+SELECT * FROM student WHERE city IN("Delhi", "Kolkata");//student who lives either delhi or Mumbai
+SELECT * FROM student WHERE city NOT IN("Delhi", "Kolkata");//student who does not live either delhi or Mumbai
+
+SELECT * FROM student WHERE marks>=80 LIMIT 3;//mane marks>=80 eirokom 3 te student r details delhabe
+
+SELECT * FROM student ORDER BY city ASC;// ascending order e students er details show korche
+SELECT * FROM student ORDER BY city DESC;
+
+class er top 3 student r datar jnno:
+SELECT * FROM student ORDER BY marks DESC LIMIT 3;
+
+SELECT MAX(marks) FROM student;
+
+SELECT * FROM student
+ORDER BY marks DESC
+LIMIT 3;//it will show the top 3 students' details.
+
+
+SELECT city, COUNT(name)
+FROM student
+GROUP BY city;//it will show how many students are there from each city.
+
+

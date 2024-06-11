@@ -1,0 +1,49 @@
+Good afternoon sir/mam/everyone. Firstly I would like to thank you for giving me this 
+oppurtunity to introduce myself.
+
+    I am Rahul Ghosh, I am from Serampore, Hooghly, West Bengal living with my parents in a joint family.
+    Right now I am a final year student pursuing my B.Tech degree 
+in CSE from AOT with an aggregate of 8.9 CGPA on average. I have 
+already completed my Diploma degree in ETCE from Ramakrishna
+Mission Shilpamndira with an aggregate of 9.2 CGPA on average.
+I have completed both my secondary and high secondary examination from 
+the same school named Serampore Union Institution with percentages of 82%
+and 75% respectively.
+
+    Throughout my academic journey, I have developed a strong foundation in programming 
+    languages like C, C++, JAVA, SQL. Also I have gained some knowledges in various
+areas of computer science such as data structure and algorithm, DataBase Management System,
+ Object Oriented Programming etc.. Beside that I have also done
+some personal projects using HTML, CSS, JS  as during this academic years
+I took a liking towards frontend web development. [Also I have been learning React JS which is a JS library for the 
+past several months.]
+
+    Some of the projects I did are building the frontend part of the Netflix website with help of some APIs.
+    and building a 3D interfaced website built with the help of GSAP, Scroll
+Trigger, Locomotive Scroll, <canvas>.
+
+    For the past two years I have been practicing my coding skills in various online
+    coding platforms. As of today I have managed to gain a total of above 2000 points on
+GeeksForGeeks by solving a total of near about 500 questions. Currently I ranked 11th in our college in GFG platform. Also I have solved 200+ 
+questions in LeetCode and Coding Ninja.
+
+    I have been fortunate enough to attend an exciting 36-hour MLH offline hackathon organized by IIIT Kalyani named 
+    StatusCode0. There we built a full stack web app named KhetoKiBaatKaro. You can say that it is stack overflow for the farmers.
+[It is a web app where all the farmers can connect with each other and post their queries from the community. Also there was a 
+features by which they can connect with each other via their whats app. There I helped my team to build the frontend part of 
+that project along with one of my friends. It was really a good experience.]
+
+    To be honest, my short term goal is to be financially independent by securing a job in a company like yours. You see during the 24 years of my 
+    life my father has been the only bread winner of my family. For the past 3 years I have started teaching mathematics upto class 10 to a 
+total of 30 students and from that I have been helping my father a little and in the mean time I was looking for some internships, and I got a virtual Data Entry internship in September of last year.
+Also in february of 2024, I got a BDE(Business Development Executive) internship in a company named TimeForTheWeb at DumDum, Kolkata.
+
+    Coming to my extra carricular activities, growing up I have been always a sports person.
+    Back in my school days, I was a track and field athlete and I represented my school in district level.
+and in recent years I have gone to play football and watch football matches in my free time.
+
+Other than that, if I am talking about my strength, I can say that I am a carrear oriented person.
+and if I am talikng about weakness, I would say I am overly critical of my own work sometimes.[ex: you see yesterday, there was my final semester exam, so before exam I was not confident with my preparation
+but during the exam I realized that I actually prepared really well for the exam]. 
+
+That's all about me and thank you.
