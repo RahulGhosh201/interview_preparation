@@ -1,0 +1,76 @@
+
+library: common function thakay segulo r jnno age theke code lekha thake library r 
+modhye ja k amra call korte pri with the help of functions and objects.
+developer der library r opor besi control thake tara decide korte pare kokhon kon function k call korbe.
+
+Framework: j application ta amra banate jachi tar jnno ekta skeleton structure provide kore. framework nije decide kore dey code r flow ta and developer
+ sei flow follow kore code write korte hoy.
+
+js library: React, jQuery
+js framework: Angualr, Vue.js, Next.js
+
+react ekta front end javascript library for building user interfaces.
+react mainly focuses on ui, component based architecture.
+
+react maily use kora hoy single page application create korar jonno.
+mane react die amra j component gulo banai segulo reusable hoy so ei component gulo barbar use 
+kore ei single page architecture r help e amra onek page with different functionalities create korte pari.
+
+ react server side rendering kore mane server side e react components gulo k render kore and then html content generate kore seta k client side e send kore. eta SEO boost kore.
+ mane client side e gie ek ekta component k call kore app ta build kore na server side e build kore then seta k client side e show koray.
+
+Dom(document object model): tree like structure jekhane each node is a react component. 
+ebar er disadvantage holo jokhn i kono components e chage hoy, baki components gulo k accordingly update kora khub costly hye jay.
+Virtual DOM: where as virtual dom holo lightweight memory representation r dik die mane eta update in various components k optimize kore.
+reconcilation: react ekta virtual dom create kore and eta update kore jokhon kono states ar props r change ase, tarpor ei virtual dom previous virtual dom r sathe compare kore j changes gulo pabe segulo real dom e update ane.
+react group e mane eksathe dom update kore reflow k minimum korar jnno.
+
+mane amra bolte pari dom holo actual representation of the web page where as virtual dom holo in memory representation.
+react e virtual dom, reusable ui components, seo friendly(ssr),  
+
+useState() use kora hoy jokhon dom kichu dynamically manipulate korar try korche.
+suppose amra kono digital notebook app banachi tate j notes gulo stre korchi sei note r various states hote pare like note k change kora hyeche, ekhon sei note r modhye kichu lekha hche, kon notes ta k save kora hyeche, etc.
+er help e react keeps track of the components used in our application . or shopping cart
+app ta k dynamic, interactive korte state use kora hoy. 
+
+props: eta holo read only attribute jak ekta component theke arekta component e pass kore deoa hoy. suppose parent component tar child component k props ta pass kore dilo.
+props use kore code reusable hoy. 
+
+keys: eta ekta special attribute jak react e lists of element create korar time e use korte hoy. 
+eta react k help kore bujhte j kon element change hyeche, add or remove hyeche.
+eta lists of element k uniquely identify kore.
+mane puro lists of element ta k rerender na kore only jegulo changes hyecche segulo k mention kore dey and this way optimzation hye gelo.
+uniquely identify elements and keep track of changes
+
+JSX means javascript html. eta amader javascript r vitore html likhte help kore.
+html builds structure, js builds logic ei 2 to k eksathe write kora jay using jsx.
+
+prop drilling hoy jokhon kono data k pass korte hoy from a top level component to a deeply nestesd child component.
+
+react hooks: kono functional components er modhye state and other react features k add kora hoy using react hooks.
+imagine amra ekta shopping cart banachi using react then amra hooks use kore state k include korte pari jeta cart e thaka items r state bolte parbe.
+
+react hooks use korar rules:
+1. hooks k inside loops, conditions or nested functions er modhye call kora jabe na always fubctional component r top e call korte hbe.
+2. javascript function theke call korle hbe na react function theke call korte hbe.
+3. every render e hooks jeno same order e theke seta kheyal korte hbe.
+
+useEffect holo ekta side effect in functional component. er help e data fetching, dom updating kora hoy outside the main flow of component.
+suppose amra kono weather app build korar try korchi and using api weather r data fetch korar try korchi sekhane useEffect use korte hoy.
+
+
+age class component use kore component create kora hoto but nowadays hooks use kore functional components create kora hoy.
+
+house jodi kono web application hoy then different rooms holo components and ei different room use kora hoy different purpose r jnno.
+
+component lifecycle holo kono component r creation to deletion mane component r life r different stage e class components e hook use kora hoy.
+
+mane suppose amader emon kono ekta logic lagbe jeta amra code reuse korei jabo like fetching data from api or  time manager sei khetre amra custom hooks build kore nebo.
+
+api mane apoplication programming interface.
+api ekta bridge r moto kaj kore ja amar appliaction k external service and database er sathe connect kore. 
+suppose tumi ekta city build korecho jar modhye thaka neighbours(components) der services are required from outside the city and ei services gulo provide kore api.
+
+rendering is important in react whenever states(mane suppose digital notebook app e notes r various states or shopping cart e thake items gulor various state)and 
+props(acting props, director tar actor der ja provide kore mane ekhane parent componet je read only attribute ta child component k pass kore dey) er changes hole sei changes 
+dynamically changes ane ei rendering. ei dynamic update i react applications k intercative and responsive kore tole.

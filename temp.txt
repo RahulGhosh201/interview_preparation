@@ -1,0 +1,84 @@
+primitive(string,number, bigint, boolean, undefined, null)
+non-premitive(object)
+
+j variable ta function r vitore use korbo sei variable ta amra chaile function define korar poreo 
+declare korte pari eta kei genearally hoisting bola hoy. but strict() function use korle seta r kora jay na.
+
+==value compare kore
+===value and data types compare kore
+
+let, const r scope khub choto mane j block r modhye declare kora hyeche outside that block access kora jabe na
+var die declare variable k access kora jabe.
+
+coercion holo amra jokhn kono string k number r sathe concatenate kori using + then strin gconcatenate hoy mane
+3+"3" ="33"
+but 3-"3"=0
+
+js k amra dynamically typed language boli karon js e variable e amra kono value assign korar pore in future jodi abar value assign kori amra chaile different data types er value assign korte parbo
+
+pass by value and reference
+
+immediately invoked function or self invoking funtion 
+runs as soon as its declared
+
+genearlly hoisting allow kore na.
+duplicate arguments are not allowed
+javascript e j keyword ache tader as a parameter or function name use kora jay na.
+global variable create kora jay na.
+
+higher order function mane function inside a function
+
+suppose in encapsulation, kichu variable k jodi private die declare kori then sei varibale ta amra oi class er baire theke access korte parina then amader public getter setter use korte hpoy. 
+public setter e amra likhi this.name=name;
+so, this keyword is used to return the object's property.
+
+call arguments k individually accept kore whereas apply arguments k array of arguments e accept kore.
+
+exec() and test() kono string r modhye substring ache kina check kore, ekhane exec() return kore ekta array jate khuje paoa substring gulo ache. na pele null return kore
+test() kuje pele true return kore and na pele false return kore mane boolean value return kore.
+regex or regular expression bole.
+
+Function add(a){
+    return function(b){
+        return a+b;
+    }
+}
+
+add(3)(4);//7
+
+mane amra js ta html file r modhye na likhe alada kore likhi karon ete developer der 
+html, js file handle kora easy hye jay.
+code reuse kora jay.
+code r readibility bere jay.
+
+scope: global, funcion, block
+
+scope chain: first e local scope e khujbo na pele outer scope khujbo na pele global scope e khujbo na reference errror throw korbe.
+
+jokhon kono function r vitore arekta function ba nested function create kora hoy outerfunction e declare kora kono variable k nested function theke access kora jay takei closure bole.
+
+getElmentByID, getElementByClassName, getElementByTagName. querySelector, querySelectorAll
+
+createElement
+
+event handling: addEventListener, onclick(), alert()
+callback() use kore amra api theke data fetch kore thaki.
+eta function define korar time e as an agument pass korano hoy.
+
+syntax error() runtime e problem korbe
+logical error() without showing any error output peye jabo but desired output pabo na.
+
+memoization holo onek ta dp r moto , eta kono calculation korar pore value memory te store kore rakhe fibonacci te use kora hoye thake fole code reusability kome, redundancy kome.
+
+charAt() returns the charater present at that index and the string is 0-indexed.
+
+best case is represented by omega
+avearge case is represented by theta
+worst case is represented by big oh.
+
+B-tree: 
+eta m-way tree jak disk access rjnno use kora hoy. 
+kono b-tree r order m hole tate m-1 keys and m children thake.
+
+Krithi krithivasan----CEO
+faqir chand kohli(1968)------founder

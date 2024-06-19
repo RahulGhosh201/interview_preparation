@@ -1,0 +1,94 @@
+1. Select the names of all orchestras 
+that have the same city of origin as any 
+city in which any orchestra performed in 2013.
+
+SELECT name FROM orchestras WHERE city_origin IN (SELECT city FROM concerts WHERE year=2013);
+
+SELECT CURDATE();//to print current date
+DML: insert, update, delete
+DDL: create, alert, turncate, drop
+DQL:SELECT
+DCL:grant, revoke
+TCL:rollback, commit
+
+SELECT city, COUNT(name)
+FROM student
+GROUP BY city;
+
+SELECT city,COUNT(roll_no)
+FROM student
+GROUP BY city
+HAVING marks>90;
+
+UPDATE student
+SET grade="O"
+WHERE grade="A";
+
+CREATE TABLE student(
+    id INT PRIMARY KRY,
+    course_id INT,
+    FOREIGN KEY course_id REFERENCES course(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
+
+ALTER TABLE table_name
+ADD COLUMN column_name data_type constraints;
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name datatype constraints;
+
+ALTER TABLE table_name
+MODIFY column_name datatype constraint;
+
+SELECT * FROM customer
+WHERE city LIKE 'm%';
+
+SELECT *
+FROM table1 as A
+LEFT JOIN table2 as B
+ON a.cust_id=b.cust_id;
+
+union return kore all the records from 2 tables, but duplicate value gulo return kore na 
+where as union all duplicate value gulo return kore
+
+SELECT * 
+FROM customer
+LEFT JOIN student
+ON customer.id=student.id
+UNION 
+SELECT * 
+FROM student
+RIGHT JOIN customer
+ON student.id=customer.id;
+
+Get names of the student who scored more than class average.
+SELECT name FROM student WHERE marks>(SELECT AVG(marks) FROM student)
+
+Find the names of all students with even roll numbers
+SELECT roll_no FROM student WHERE roll_no%2=0;
+
+Find the max marks from the student of Delhi
+SELECT MAX(marks) FROM student(SELECT name FROM student WHERE city='Delhi') AS temp;
+
+Show the name and position of orchestra members who earn more than the average wage of all violinists.
+SELECT name, position FROM orchestra WHERE wage>(SELECT AVG(wage) FROM orchestra WHERE position='violin');
+
+Show the names of orchestras that were created after the 'Chamber Orchestra' and have a rating greater than 7.5.
+SELECT name FROM orcheestra WHERE year>(SELECT year FROM orchestra WHERE name='Chamber Orchestra') AND rating>7.5
+
+Show the name and number of members for each orchestra that has more members than the average membership of all orchestras in the table.
+SELECT name, membership FROM orchestra WHERE membership>(SELECT AVG(membership) FROM orchestra)
+
+SELECT *
+FROM table1 AS a
+LEFT JOIN table2 AS b
+ON a.cust_id=b.cust_id
+UNION
+SELECT *
+FROM table2 AS c
+LEFT JOIN table1 AS d
+ON c.cust_id=d.cust_id;
