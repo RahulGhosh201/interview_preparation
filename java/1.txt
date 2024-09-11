@@ -1,5 +1,0 @@
-JIT:
-Just-In-Time compiler. eta interpreter r efficiency k increase kore by compiling the bytecode in runtime. 
-JIT kono code k directly machine level e compile korte pare, so that it increases spped of code execution.
-
-ClassLoader:
