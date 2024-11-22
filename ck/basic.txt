@@ -1,0 +1,65 @@
+java platform independent language karon java file ta javac te compile korar por bytecode or .class file generate hoy je file ta k amra 
+j kono device e run korate pari khali run koranor jnno sei device e jvm(java Virtual Machine) available thakte hobe, tobe ei jvm is platform dependent.
+karon jvm has multiple pltforms like windows, linux, Machine
+JVM is responsible for loading, verifying, execute the bytecode created in java
+
+JIT(Just-In-Time) is used for better performance of the java application in run-time. JIT compiler is  part of JRE(Java RunTime Environment).
+
+JVM is an interpreter responsible for converting bytecode into machine-readable code.
+JRE is an installation package that provides an environment to run the java program or application on any machine.
+JDK provides the environment to develop and execute java programs, it combines of the development tool and JRE to execute the java program.
+
+(JVM+Set of Librries)=JRE
+JVM+JRE=JDK
+
+
+C++ is platfor dependent but java is not.
+
+amra main method k static declare na o korte pari, kintu tate main method k entry point hisabe dhorbe na.
+
+java te pointer available noy.
+
+primitive data type: (boolean, byte, char, short, int, long, float, double)
+non-primitive data type: (Strings, Array, Class, Object, Interface)
+
+default value::
+numeric types(byte,short,int,long,float,double)->0
+boolean->false
+object types(classes, interfaces, arrays),char->null
+
+
+Instace variable: declared outside the method, directly invoked by the method, it has a default value, it can be used throughout the class
+Local variable: declared within the method, no default value, the scope is limited to the method
+
+System.err used to print error mesage
+System.out used to print output message
+System.in used to take input
+
+Classloader is part of the JRE jeta javafile ta k execution e help kore mane bytecode e convert korte help kore
+
+wrapper class is an object class that encapsulates the primitive data types.
+this are final and immuatble
+
+this.instane=local;
+instance variable jegulo kono class er modhye declare kora hoy but eta static noy, eta static holei tokhon hoye jabe class variable 
+method r mofhye declare kora variable k local variable bole
+
+static keyword die kono variable generate korle, tarpor sei class die create kora protyek object same variable ta k share kore amne 
+suppose first object e amra jodi static variable tar value change kori then second object e oi static variable tar value change hoye thakbe
+
+we can read input using Scanner class
+Scanner sc=new Scanner(System.in);
+using command line argunment
+psvm(String[] args){
+    if(args.length>0){
+        for(String it:args){
+            sysout(it);
+        }
+    }
+}
+javac GFG.java
+java GEEKSFORGEEKS
+
+using console class
+
+String x=System.console().readLine();
